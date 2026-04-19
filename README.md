@@ -59,3 +59,7 @@ http://localhost:5173
 - CSV report export
 - Hash integrity check
 - Severity classification
+
+---
+
+This project is intended for educational and local development purposes only.
