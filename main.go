@@ -11,6 +11,10 @@ type Result struct {
 }
 
 func analyzeHandler(w http.ResponseWriter, r *http.Request) {
+
+	// 追加
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+
 	results := []Result{
 		{"192.168.1.1", 12},
 		{"10.0.0.1", 7},
