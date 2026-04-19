@@ -17,7 +17,9 @@ It detects suspicious IP activity based on access frequency and provides results
 
 ## Architecture
 
-Log file → Go API → JSON → Frontend UI
+Sample Log → Go API (IP parsing & counting) → JSON response → TypeScript Frontend (display)
+
+This project demonstrates a simple Intrusion Detection System (IDS) concept by analyzing access frequency patterns, simulating basic security monitoring behavior.
 
 ---
 
@@ -45,8 +47,8 @@ http://localhost:5173
 ## Example Output
 
 ```
-⚠ Suspicious IP: 192.168.1.1 (count: 12)
-⚠ Suspicious IP: 10.0.0.1 (count: 7)
+⚠ Suspicious IP detected: 192.168.1.1 (access count: 12)
+⚠ Suspicious IP detected: 10.0.0.1 (access count: 7)
 ```
 
 ---
